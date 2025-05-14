@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ :root { /*criação de variáveis CSS */
+    --cor-01: #06C;
+    --cor-02: #000;
+    --cor-03: #CCC;
+    --cor-04: #FFF;
+}
+
+.container {
+    max-width: 1000px; /* Largura máxima do container */
+    margin: 0 auto; /* Centraliza o container na página */
+}
+
+#cabecalho {
+    background-color: var(--cor-02);
+    margin-bottom: 30px;
+}
+
+#cabecalho .container {
+    display: flex; /* Alinha os itens do cabeçalho em linha */
+    justify-content: space-between; /* Espaça os itens do cabeçalho */
+    align-items: center; /* Alinha os itens do cabeçalho verticalmente */
+}
+
+#cabecalho #logo {
+    width: 30px;
+}
+
+#menu ul {
+    display: flex; /* Alinha os itens do menu em linha */
+}
+
+#menu .submenu {
+    display: none; /* Esconde o submenu */
+    background-color: var(--cor-02); /* Cor de fundo do submenu */
+    position: absolute; /* Permite posicionar o submenu em relação ao item pai */
+    z-index: 1; /* Garante que o submenu fique acima de outros elementos */
+}
+
+#menu ul li a {
+    color: var(--cor-04);
+    text-decoration: none; /*tira o sublinhado padrão do navegador */
+    display: block; /* Faz o link ocupar todo o espaço do elemento pai */
+    padding: 20px 30px; /* Insere espaço entre as opções do menu */
+    transition: all .3s linear; /* Transição suave para o hover */
+}
+
+#menu ul li a:hover{
+    background-color: var(--cor-01); /* muda a cor ao passar o mouse */
+}
+
+#menu ul li:hover .submenu{
+    display: block; /* Exibe o submenu ao passar o mouse */
+}
