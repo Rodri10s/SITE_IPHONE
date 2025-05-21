@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
+    font-family:'Funnel Sans', Tahoma, Geneva, Verdana, sans-serif
 }
 
  :root { /*criação de variáveis CSS */
@@ -56,3 +60,62 @@
 #menu ul li:hover .submenu{
     display: block; /* Exibe o submenu ao passar o mouse */
 }
+
+.titulo {
+    font-size: 40px;
+    text-align: center; /* Alinha o texto ao centro */
+    margin-bottom: 30px; /* Espaço abaixo do título */
+}
+
+#historia img{
+    float: left; /* Faz a imagem flutuar à esquerda */
+    width: 350px;
+    border-radius: 30px; /* Bordas arredondadas */
+    margin-right: 20px; /* Espaço à direita da imagem */
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+#historia p{
+    margin-bottom: 15px;
+    text-align: justify; /* Justifica o texto */
+}
+
+#fotos #galeria {
+    display: grid; /* Usa grid para organizar as fotos */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* 4 colunas de largura igual */
+    gap: 20px; /* Espaço entre as colunas */
+}
+
+#fotos #galeria img {
+    display: block; /* Faz a imagem ocupar todo o espaço do elemento pai */
+    width: 100%; /* Largura total da coluna que está inserida*/
+    transition: all 0.2s linear; /* Transição suave para o hover */
+}
+
+#fotos #galeria img:hover {
+    transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+}
+
+#videos #galeria {
+    display: grid; /* Usa grid para organizar os videos */
+    grid-template-columns: 1fr 1fr; /* 2 colunas de largura igual */
+    gap: 20px; /* Espaço entre as colunas */
+}
+
+#rodape {
+    background-color: var(--cor-02);
+    color: var(--cor-04);
+    padding: 20px; /* Espaço interno do rodapé */
+    text-align: center;
+    font-size: 12px;
+    margin-top: 30px;
+}
+
+#rodape a{
+    color: var(--cor-03);
+}
+
+#rodape a:hover{
+    color: var(--cor-01); /* Muda a cor do link ao passar o mouse */
+    text-decoration: underline; /* Sublinha o link ao passar o mouse */
+}   
